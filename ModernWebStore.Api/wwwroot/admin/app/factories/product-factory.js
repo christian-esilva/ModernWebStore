@@ -7,11 +7,16 @@
     function ProductFactory($http, $rootScope, SETTINGS) {
         return {
             get: get,
+            getById: getById,
             post: post
         }
 
         function get() {
             return $http.get(SETTINGS.SERVICE_URL + 'api/products', $rootScope.header);
+        }
+
+        function getById(id) {
+            return $http.get(SETTINGS.SERVICE_URL + 'api/products/' + id, $rootScope.header);
         }
 
         function post(product) {

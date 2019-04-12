@@ -132,6 +132,7 @@
     <Content Include="wwwroot\admin\app\controllers\category\category-controller.js" />
     <Content Include="wwwroot\admin\app\controllers\home\home-controller.js" />
     <Content Include="wwwroot\admin\app\controllers\product\product-create-controller.js" />
+    <Content Include="wwwroot\admin\app\controllers\product\product-edit-controller.js" />
     <Content Include="wwwroot\admin\app\controllers\product\product-list-controller.js" />
     <Content Include="wwwroot\admin\app\factories\account-factory.js" />
     <Content Include="wwwroot\admin\app\factories\category-factory.js" />
@@ -434,9 +435,32 @@
     <Content Include="wwwroot\admin\public\dev\pages\account\login.html" />
     <Content Include="wwwroot\admin\public\dev\pages\category\index.html" />
     <Content Include="wwwroot\admin\public\dev\pages\home\index.html" />
+    <Content Include="wwwroot\admin\public\dev\pages\product\edit.html" />
     <Content Include="wwwroot\admin\public\dev\pages\product\create.html" />
     <Content Include="wwwroot\admin\public\dev\pages\product\index.html" />
     <Content Include="wwwroot\admin\public\dev\pages\shared\headbar.html" />
+    <Content Include="wwwroot\store\app\app.js" />
+    <Content Include="wwwroot\store\app\config.js" />
+    <Content Include="wwwroot\store\app\controllers\account\login-controller.js" />
+    <Content Include="wwwroot\store\app\controllers\account\logout-controller.js" />
+    <Content Include="wwwroot\store\app\controllers\home\home-controller.js" />
+    <Content Include="wwwroot\store\app\controllers\store\cart-controller.js" />
+    <Content Include="wwwroot\store\app\factories\account-factory.js" />
+    <Content Include="wwwroot\store\app\factories\product-factory.js" />
+    <Content Include="wwwroot\store\app\routes.js" />
+    <Content Include="wwwroot\store\Gruntfile.js" />
+    <Content Include="wwwroot\store\public\dev\assets\imgs\favicon.ico" />
+    <Content Include="wwwroot\store\public\dev\index.html" />
+    <Content Include="wwwroot\store\public\dev\pages\account\login.html" />
+    <Content Include="wwwroot\store\public\dev\pages\home\index.html" />
+    <Content Include="wwwroot\store\public\dev\pages\shared\headbar.html" />
+    <Content Include="wwwroot\store\public\dev\pages\store\cart.html" />
+    <Content Include="wwwroot\store\public\dist\assets\css\styles-1.0.0.min.css" />
+    <Content Include="wwwroot\store\public\dist\assets\font\fontawesome-webfont.svg" />
+    <Content Include="wwwroot\store\public\dist\assets\imgs\favicon.ico" />
+    <Content Include="wwwroot\store\public\dist\assets\js\scripts-1.0.0.min.js" />
+    <Content Include="wwwroot\store\public\dist\index.html" />
+    <Content Include="wwwroot\store\public\dist\pages\shared\headbar.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\BaseController.cs" />
@@ -708,6 +732,13 @@
     <Content Include="wwwroot\admin\bower_components\toastr\toastr.js.map" />
     <Content Include="wwwroot\admin\bower_components\toastr\toastr.less" />
     <Content Include="wwwroot\admin\bower_components\toastr\toastr.scss" />
+    <Content Include="wwwroot\store\bower.json" />
+    <Content Include="wwwroot\store\package.json" />
+    <Content Include="wwwroot\store\public\dist\assets\font\fontawesome-webfont.eot" />
+    <Content Include="wwwroot\store\public\dist\assets\font\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\store\public\dist\assets\font\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\store\public\dist\assets\font\fontawesome-webfont.woff2" />
+    <Content Include="wwwroot\store\public\dist\assets\font\FontAwesome.otf" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModernWebStore.ApplicationService\ModernWebStore.ApplicationService.csproj">
@@ -729,7 +760,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\admin\public\dist\" />
-    <Folder Include="wwwroot\store\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
