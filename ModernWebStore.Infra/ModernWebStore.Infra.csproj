@@ -56,6 +56,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201904101350361_InitialCreate.cs" />
+    <Compile Include="Migrations\201904101350361_InitialCreate.Designer.cs">
+      <DependentUpon>201904101350361_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904111326252_InitialCreate1.cs" />
+    <Compile Include="Migrations\201904111326252_InitialCreate1.Designer.cs">
+      <DependentUpon>201904111326252_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\DataContext\StoreDataContext.cs" />
     <Compile Include="Persistence\IUnitOfWork.cs" />
     <Compile Include="Persistence\Mappings\CategoryMap.cs" />
@@ -79,6 +88,14 @@
       <Project>{2a51c621-7ab2-4b88-9378-00c63241e3cf}</Project>
       <Name>ModernWebStore.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904101350361_InitialCreate.resx">
+      <DependentUpon>201904101350361_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904111326252_InitialCreate1.resx">
+      <DependentUpon>201904111326252_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

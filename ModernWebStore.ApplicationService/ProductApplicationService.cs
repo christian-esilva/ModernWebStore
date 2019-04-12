@@ -18,7 +18,7 @@ namespace ModernWebStore.ApplicationService
 
         public Product Create(CreateProductCommand command)
         {
-            var product = new Product(command.Title, command.Description, command.Price, command.QuantityOnHand, command.CategoryId);
+            var product = new Product(command.Title, command.Description, command.Price, command.QuantityOnHand, command.CategoryId, command.Image);
             product.Register();
             _repository.Create(product);
 

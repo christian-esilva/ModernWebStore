@@ -4,13 +4,16 @@ namespace ModernWebStore.Domain.Entities
 {
     public class Product
     {
-        public Product(string title, string description, decimal price, int quantityOnHand, int categoryId)
+        protected Product() {}
+
+        public Product(string title, string description, decimal price, int quantityOnHand, int categoryId, string image = "")
         {
             Title = title;
             Description = description;
             Price = price;
             QuantityOnHand = quantityOnHand;
             CategoryId = categoryId;
+            Image = image;
         }
 
         public int Id { get; private set; }
@@ -19,6 +22,7 @@ namespace ModernWebStore.Domain.Entities
         public decimal Price { get; private set; }
         public int QuantityOnHand { get; private set; }
         public int CategoryId { get; private set; }
+        public string Image { get; private set; }
         public Category Category { get; private set; }
 
         public void UpdateQuantityOnHand(int amount)

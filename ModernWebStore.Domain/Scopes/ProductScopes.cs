@@ -1,10 +1,5 @@
 ﻿using ModernWebStore.Domain.Entities;
 using ModernWebStore.SharedKernel.Validation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ModernWebStore.Domain.Scopes
 {

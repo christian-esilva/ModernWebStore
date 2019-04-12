@@ -4,6 +4,8 @@ namespace ModernWebStore.Domain.Entities
 {
     public class Category
     {
+        protected Category() { }
+
         public Category(string title)
         {
             Title = title;
